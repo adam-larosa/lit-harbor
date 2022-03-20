@@ -6,7 +6,5 @@ class MoviesController < ApplicationController
 
 	def show
 		render json: Movie.find( params[:id] )
-	rescue ActiveRecord::RecordNotFound
-  		render json: "Movie not found", status: :not_found
 	end
 end
