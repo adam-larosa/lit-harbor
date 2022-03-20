@@ -14,12 +14,21 @@ function Main() {
     </div>
   )
 }
+
+function NotHarbor() {
+  return (
+    <div className="App App-header">
+      <h1>not harbor</h1>
+    </div>
+  ) 
+}
 function App() {
 
   return (
     
     <Routes>
       <Route path="*" element={<Main />} />
+      <Route path="/not" element={<NotHarbor />} />
     </Routes>
   );
 }
