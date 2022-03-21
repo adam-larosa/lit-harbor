@@ -22,10 +22,10 @@ function NotHarbor() {
     </div>
   ) 
 }
-function App() {
 
+
+function App() {
   return (
-    
     <Routes>
       <Route path="*" element={<Main />} />
       <Route path="/not" element={<NotHarbor />} />
