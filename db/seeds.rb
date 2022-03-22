@@ -1,4 +1,5 @@
 Movie.destroy_all
+User.destroy_all
 
 Movie.create!(title: "Blade Runner - 1982", runtime: 117)
 Movie.create!(title: "Johnny Mnemonic", runtime: 96)
