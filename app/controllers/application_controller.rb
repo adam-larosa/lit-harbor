@@ -7,18 +7,17 @@ class ApplicationController < ActionController::API
     before_action :authorize
 
     def current_user
-        #User.find_by(id: session[:user])
-        true
+        User.find_by( id: session[:user_id] )
     end
 
     private
 
     def not_found(invalid)
-        render json: { error: "#{invalid.model} not found" }
+        render json: { error: "#{invalid.model} not found" }, status: 404
     end
 
     def not_valid(invalid)
-        render json: { errors: invalid.record.errors.full_messages }
+        render json: { errors: invalid.record.errors.full_messages }, status: 422
     end
 
     def logged_in?
