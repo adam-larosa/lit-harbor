@@ -8,7 +8,7 @@ function Main() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>LIT HARBOR</h1>
+        
         <button onClick={sendAGET}>X</button>
       </header>
     </div>
