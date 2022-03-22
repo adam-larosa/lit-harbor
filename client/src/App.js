@@ -8,7 +8,7 @@ function Main() {
   }
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="cool">
         <h1>LIT HARBOR</h1>
         <button onClick={sendAGET}>X</button>
       </header>
@@ -18,7 +18,7 @@ function Main() {
 
 function NotHarbor() {
   return (
-    <div className="App App-header">
+    <div className="cool">
       <h1>not harbor</h1>
     </div>
   ) 
