@@ -1,5 +1,6 @@
 import './stylesheets/App.css';
 import { Routes, Route } from 'react-router-dom'
+import Signup from './components/Signup'
 
 function Main() {
   const sendAGET = () => {
@@ -29,6 +30,7 @@ function App() {
     <Routes>
       <Route path="*" element={<Main />} />
       <Route path="/not" element={<NotHarbor />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }
