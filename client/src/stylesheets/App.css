@@ -1,5 +1,7 @@
 
-
+.drop {
+  animation: 'colorRotate 4.5s linear 0s infinite' 
+}
 @keyframes colorRotate {
   from {
       color: rgb(255, 0, 0);

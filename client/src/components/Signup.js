@@ -1,7 +1,7 @@
 export default function Signup() {
     return (
         <div className="cool">
-            <h1 style={{ animation: 'colorRotate 4.5s linear 0s infinite' }}>
+            <h1 className='drop'>
                 DROP ANCHOR
             </h1>
         </div>
